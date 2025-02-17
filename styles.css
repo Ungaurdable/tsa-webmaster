@@ -1,0 +1,10 @@
+.navbar nav{
+   flex-direction: column;
+   justify-content: end;
+}
+
+.specials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
