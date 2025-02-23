@@ -8,3 +8,81 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+/*-----About Us Styles-----*/
+#about-us-title{
+    margin-top: 20px;
+    text-align: center;
+}
+#aboutUs{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+#aboutUs p{
+    padding: 5%;
+}
+
+#aboutUs img{
+    margin-left: 5%;
+}
+
+#meetTheChefs{
+    margin-top: 3%;
+    text-align: center;
+}
+
+#chefs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*-----Menu Styles-----*/
+#menuCategories{
+    text-align: center;
+    margin: 5%;
+   
+}
+
+#menuCategories button{
+    margin: 15px;
+
+}
+
+#menu-appetizers, #menu-entrees, #menu-desserts, #menu-drinks, #menu-specials{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: row;
+    border-left: green;
+    justify-content: 1fr 2fr 1fr;
+}
+
+.menu-hr{
+    border: none;
+    border-top: 5px dotted black;
+    width: 400px;
+}
+
+.price{
+    margin-left:15px;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.vl{
+    border-left: 10px solid green;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
