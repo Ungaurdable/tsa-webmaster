@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active btn btn-danger" aria-current="page" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-danger" href="book.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-danger" href="contact.html"> Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-danger" href="aboutus.html"> About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="booking-elements">
+        <div id="reservations">
+            <h3>Reservation</h3>
+            <p>Looking for a spot for a quick date night? A small celebration? A friends' night out? Hafiza is the perfect place.</p>
+            <p>Click the button below to book your reservation now!</p>
+            <button type="submit" onclick="openPopup()">Book a Table</button>
+        </div>
+        <div id="events">
+            <h3>Events</h3>
+            <p>Events can be hard to plan but at Hafiza, we make it easy. Click the button below to book your event today!</p>
+            <p><strong>Events are for parties of 20 people and above.</strong></p>
+            <button>Book an Event</button>
+        </div>
+        <div id="catering">
+            <h3>Catering</h3>
+            <p>Hosting an event and need food? Hafiza is the perfect place to get catering. We make delicous food as well as deliver it!</p>
+            <p>Click the button below to start your order now!</p>
+            <button>Book for Catering</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="popup" id="popup">
+            <h2>Order Details</h2>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Order Name" aria-label="order-name" aria-describedby="basic-addon1">
+            </div>
+            
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+            
+            <div class="mb-3">
+              <label for="basic-url" class="form-label">Your vanity URL</label>
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+              </div>
+              <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+            </div>
+            
+            <div class="input-group mb-3">
+              <span class="input-group-text">$</span>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <span class="input-group-text">.00</span>
+            </div>
+            
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+              <span class="input-group-text">@</span>
+              <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+            </div>
+            
+            <div class="input-group">
+              <span class="input-group-text">With textarea</span>
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+      </div>
+
+      <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup")
+        }
+
+        function closePopup(){
+            popup.classList.remove("open-popup")
+        }
+      </script>
+</body>
+</html>

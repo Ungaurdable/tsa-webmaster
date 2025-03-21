@@ -2,514 +2,217 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
 
-    <!doctype html>
-    <html lang="en">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+  <!doctype html>
+  <html lang="en">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="menu.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-        <div class="container-fluid ">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Booking</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Careers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Meet the Chefs</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-            
+<body id="menu">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active btn btn-danger" aria-current="page" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-danger" href="book.html">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-danger" href="contact.html"> Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-danger" href="aboutus.html"> About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Buttons to different types-->
+  <div id="menu-categories">
+    <button><a href="#menu-appetizers">Appetizers</a></button>
+    <button><a href="#menu-entrees">Entrees</a></button>
+    <button><a href="#menu-desserts">Desserts</a></button>
+    <button><a href="#menu-drinks">Drinks</a></button>
+    <button><a href="#menu-specials">Specials</a></button>
+  </div>
+
+  <h2 class="menu-title">Appetizers</h2>
+  <div class="menu-section">
+    <div class="menu-group">
+      <div class="menu-item">
+        <h5>Mediterranean Spelt-Stuffed Peppers
+        </h5>
+        <div class="content">
+          <p>Perfect blend of stuffing with a tang of spice <b>9</b></p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <h5>Spinach Vegetable Dip with Pistachios and Zhoug</h5>
+        <div class="content">
+          <p>Savory dip made with a splash of spicy zhoug sauce<b>9</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="menu-group">
+      <div class="menu-item">
+        <h5>Roasted cauli-spinach bowl with sun-dried tomato hummus</h5>
+        <div class="content">
+          <p>Explore a blend of vegetables and creamy hummus <b>9</b></p>
+        </div>
+      </div>
+      <div class="menu-item">
+        <h5>Greek Vegetable Stew</h5>
+        <div class="content">
+          <p>Try this hearty blend of vegetables with a velvety tomato sauce <b>9</b></p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <h2 class="menu-title">Entrees</h2>
+    <div class="menu-section">
+      <div class="menu-group">
+  
+        <div class="menu-item">
+          <h5>Griddled vegetable & Feta Tart
+          </h5>
+          <div class="content">
+            <p>A delicious vegetable tart filled with Mediterranean produce and feta <b>9</b></p>
           </div>
         </div>
-      </nav>
-    
-    <!--Buttons to different types-->
-    <div id="menuCategories">
-        <button>Appetizers</button>
-        <button>Entrees</button>
-        <button>Desserts</button>
-        <button>Drinks</button>
-        <button>Specials</button>
-    </div>
+        <div class="menu-item">
+          <h5>Grilled nectarine & burrata salad</h5>
+          <div class="content">
+            <p>An immaculate blend of sweet nectarines and tangy spices<b>9</b></p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <h5>Traditional Greek Salad</h5>
+          <div class="content">
+            <p>A vibrant salad created with ripe vegetables and dressed with a splash of red wine vinegar. <b>9</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="menu-group">
+  
+        <div class="menu-item">
+          <h5>Trahanas and Grilled Vegetables</h5>
+          <div class="content">
+            <p>This mouthwatering pasta dish is not only light but also explosive in the taste of smoky vegetables and a hint of lemon.<b>9</b></p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <h5> Vegan kritharaki pasta with tomato sauce</h5>
+          <div class="content">
+            <p>A flavorful vegan pasta cooked with rich tomato sauce <b>9</b></p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <h5>Vegan Souvlaki </h5>
+          <div class="content">
+            <p>A delicious dish made with firm tofu and fresh vegetables such as olives and tomatoes.<b>9</b></p>
+          </div>
+        </div>
+      </div>
+  
+      </div>
 
-    <h2>Appetizers</h2>
-    <div id="menu-appetizers">
-        <div>
-            <ul>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr">
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr" >
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-            </ul>
+    <h2 class="menu-title">Desserts</h2>
+    <div class="menu-section">
+      <div class="menu-group">
+  
+        <div class="menu-item">
+          <h5>Greek Halva
+          </h5>
+          <div class="content">
+            <p>Also, known as semolina pudding, this treat is flavorful and full of exotic nutty flavors
+              <b>9</b></p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <h5>Pistachio Baklava</h5>
+          <div class="content">
+            <p>A sweet treat with dozens of flaky, mouth-watering layers<b>9</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="menu-group">
+  
+        <div class="menu-item">
+          <h5>Coconut Cake</h5>
+          <div class="content">
+            <p>A cake that’s soft and fresh - what’s more to like?<b>9</b></p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <h5>Almond Cookies</h5>
+          <div class="content">
+            <p>A quick and easy treat with a crispy crunch of almonds.
+              <b>9</b></p>
+          </div>
+        </div>
+      </div>
+  
+      </div>
+
+      <div class="logos">
+        <div class="logos-slide">
+          <img src="images/hafiza.png" alt="Hafiza Circular Logo with a Mountain Symbol">
+          <img src="images/hafiza.png" alt="Hafiza Circular Logo with a Mountain Symbol">
+          <img src="images/hafiza.png" alt="Hafiza Circular Logo with a Mountain Symbol">
+          <img src="images/hafiza.png" alt="Hafiza Circular Logo with a Mountain Symbol">
+          <img src="images/hafiza.png" alt="Hafiza Circular Logo with a Mountain Symbol">
+          <img src="images/hafiza.png" alt="Hafiza Circular Logo with a Mountain Symbol">
+          <img src="images/hafiza.png" alt="Hafiza Circular Logo with a Mountain Symbol">
+          <img src="images/hafiza.png" alt="Hafiza Circular Logo with a Mountain Symbol">
         </div>
 
-        
-
-        <div>
-            <ul>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr">
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr">
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-            </ul>
+        <div class="logos-slide">
+          <img src="images/hafiza.png" alt="Hafiza Circular Logo with a Mountain Symbol">
+          <img src="images/hafiza.png" alt="Hafiza Circular Logo with a Mountain Symbol">
+          <img src="images/hafiza.png" alt="Hafiza Circular Logo with a Mountain Symbol">
+          <img src="images/hafiza.png" alt="Hafiza Circular Logo with a Mountain Symbol">
+          <img src="images/hafiza.png" alt="Hafiza Circular Logo with a Mountain Symbol">
+          <img src="images/hafiza.png" alt="Hafiza Circular Logo with a Mountain Symbol">
+          <img src="images/hafiza.png" alt="Hafiza Circular Logo with a Mountain Symbol">
+          <img src="images/hafiza.png" alt="Hafiza Circular Logo with a Mountain Symbol">
         </div>
+      </div>
 
-    </div>
-
-    <h2>Entrees</h2>
-    <div id="menu-entrees">
-        <div>
-            <ul>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr">
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr" >
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr" >
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <div>
-            <ul>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr">
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr" >
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr">
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <h2>Desserts</h2>
-    <div id="menu-desserts">
-        <div>
-            <ul>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr">
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr" >
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr" >
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <div>
-            <ul>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr">
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr" >
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr">
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <h2>Drinks</h2>
-    <div id="menu-drinks">
-        <div>
-            <ul>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr">
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr" >
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr" >
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <div>
-            <ul>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr">
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr" >
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr">
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <h2>Specials</h2>
-    <div id="menu-specials">
-        <div>
-            <ul>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr">
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr" >
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr" >
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <div>
-            <ul>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr">
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr" >
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-                <li class="menu-item">
-                    <div>
-                        <h5>Item Name</h5>
-                        <p>Item Description</p>
-                        
-                    </div>
-                    <div>
-                        <hr class="menu-hr">
-                    </div>
-                    <div class="price">
-                        <p >3</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
       
-    
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
