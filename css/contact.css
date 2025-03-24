@@ -1,0 +1,96 @@
+div.intro-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #fcf7d7;
+}
+
+.csection {
+    /* border: 2px red solid; */
+    box-sizing: border-box;
+    text-align: center;
+    flex-grow:1;
+    border-left: 2px #0095fd solid;
+    padding: 2rem;
+}
+
+.csection:first-child {
+    /* border: 2px red solid; */
+    border-left: none;
+}
+
+.csection p {
+    font-weight: 200;
+}
+
+.contact-info li {
+    list-style-type: none;
+    font-weight:200;
+}
+
+.csection h3 {
+    display: inline-block;
+    color: #0095fd;
+    border-bottom: 2px #0095fd solid;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 600px) {
+    div.intro-part {
+        display: grid;
+        grid-template-columns: 
+        1fr 1fr;
+        row-gap:0.5rem;
+        column-gap:0;
+        grid-template-areas:
+        "socials call"
+        "employ email"
+        "hours hours";
+        /* border: 2px blue solid; */
+    }
+
+    .csection {
+        padding: 1rem 2rem;
+        box-sizing: border-box;
+        text-align: center;
+        border: none;
+    }
+
+    #socials {
+        grid-area: socials;
+    }
+
+    #call {
+        grid-area: call;
+    }
+
+    #employ {
+        grid-area: employ;
+    }
+
+    #email {
+        grid-area: email;
+    }
+
+    #hours {
+        grid-area: hours;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.intro-part {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.csection {
+        padding: 2rem;
+        box-sizing: border-box;
+        border-top: 2px #0095fd solid;
+        border-left: none;
+    }
+    
+    .csection:first-child {
+        /* border: 2px red solid; */
+        border-top: none;
+    }
+}

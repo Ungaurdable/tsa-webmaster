@@ -1,0 +1,303 @@
+/* For my header to practice changing the theme - Going to move this stuff to styles to css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open-Sans', sans-serif;
+    color: black;
+}
+
+.title {
+    background-image:url('img/beachbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    display: block;
+    border: 4px red solid;
+    padding: 7.5rem 0;
+    text-align: center;
+    /* background-color:#fcf7d7; */
+}
+
+span.underline {
+    border-bottom: 4px #0095fd solid;
+}
+
+h3 {
+    font-weight: bold;
+    /* border: 2px black solid; */
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    display: inline-block;
+    border-bottom: 2p #0095fd solid;
+}
+
+.mainbody {
+    margin-top: 4.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Navbar */
+
+header {
+    /* border: 2px yellowgreen dashed; */
+    background-color: #fcf7d7;
+    backdrop-filter: blur(0.2rem);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    border-bottom: 4px #0095fd solid;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px blueviolet dotted; */
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+.logo a img {
+    border-radius: 50%;
+    height: 3.5rem;
+    width: 3.5rem;
+    margin: 0.5rem;
+    display: none;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+}
+
+a.logo-img-link {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: inline-block;
+    background-color: #0095fd;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+a.logo-name {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 2px green solid; */
+    margin: 0 1rem;
+}
+
+li.nav-list-item {
+    margin: 0rem 1rem;
+    padding: 0.25rem 0;
+    /* border: 2px yellow solid; */
+}
+
+a.nav-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+li.navbar-active a.nav-link {
+    color: #0095fd;
+}
+
+a.nav-link:hover {
+    color: #0095fd;
+    /* border-bottom: 2px #CE1211 solid; */
+}
+
+.links {
+    color: yellow;
+}
+
+a.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0095fd;
+    transition: width .2s ease-in;
+}
+
+a.nav-link:hover::after {
+    width: 100%;
+  }
+
+li.navbar-active a.nav-link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #0095fd;
+}
+
+#navMenu.nav-is-active {
+    right: 0;
+}
+
+ul.navmenu-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navmenu {
+    position: fixed;
+    z-index: 10000;
+    background-color: rgba(0, 149, 253, 0.9);
+    backdrop-filter: blur(0.1rem);
+    height: 100%;
+    top: 0;
+    right: -20rem;
+    transition: .6s ease-in-out;
+    border-left: 4px black solid;
+}
+
+li.menu-items:first-child {
+    display: flex;
+    justify-content: space-between;
+    background-color:#fcf7d7;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: 0;
+    border-bottom: 2px black solid;
+}
+
+li.menu-items {
+    border-bottom: 0.5px black solid;
+    padding: 1rem;
+}
+
+a.menu-links {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    /* border: 2px yellow solid; */
+    /* padding: 0 0.5rem; */
+}
+
+a.menu-links i.for-navmenu {
+    color: #cac4ce;
+}
+
+li.navmenu-active a.menu-links {
+    color: black;
+    border-left: 4px black solid;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+}
+
+li.navmenu-active a i.for-navmenu {
+    color: black;
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width: 800px) and (min-width: 400px) {
+
+    .mainbody {
+        margin-top: 0rem;
+    }
+
+    h1 {
+        padding: 5rem 0;
+    }
+
+    header {
+        all: unset;
+        width: 100%;
+        top: 0;
+        background-color:#fcf7d7;
+        display: flex;
+        /* backdrop-filter: blur(0); */
+    }
+
+    .hamburger {
+        display: grid;
+        place-items: center;
+        position: fixed;
+        top: 1rem;
+        right: 0.75rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color:#fcf7d7;
+        backdrop-filter: blur(0.1rem);
+        border-radius: 50%;
+    }
+
+    ul.nav-list {
+        display: none;
+    }
+
+    .navmenu {
+        width: 20rem;
+        backdrop-filter: blur(0.2rem);
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    h1 {
+        padding: 2.5rem 0;
+    }
+
+    .mainbody {
+        margin-top: 0rem;
+    }
+
+    header {
+        all: unset;
+        width: 100%;
+        top: 0;
+        background-color:url('img/beachbg.jpeg');
+        display: flex;
+        /* backdrop-filter: blur(0); */
+    }
+
+    .hamburger {
+        display: grid;
+        place-items: center;
+        position: fixed;
+        top: 1rem;
+        right: 0.75rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color:#fcf7d7;
+        backdrop-filter: blur(0.1rem);
+        border-radius: 50%;
+    }
+
+    ul.nav-list {
+        display: none;
+    }
+
+    .navmenu {
+        width: 100%;
+        right: -400px;
+        transition: .6s ease-in-out;
+        backdrop-filter: blur(0.2rem);
+        border: none;
+    }
+}
+

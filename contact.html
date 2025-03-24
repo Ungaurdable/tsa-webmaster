@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b85a2be528.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" class="logo-img-link">
+                    <img class="logo-img" src="" alt="">
+                </a>
+                <a href="index.html" class="logo-name">Hafiza</a>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-list-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="aboutus.html" class="nav-link">
+                        About Us
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="booking.html" class="nav-link">
+                        Book A Table
+                    </a>
+                </li>
+                <li class="nav-list-item navbar-active">
+                    <a href="contact.html" class="nav-link">
+                        Contact Us
+                    </a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="menu.html" class="nav-link">
+                        Menu
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hamburger" onclick="toggleNavMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <div class="navmenu" id="navMenu">
+        <ul class="navmenu-list">
+            <li class="menu-items">
+                <p>Kavin Kumanan</p>
+                <i class="fa-solid fa-x" onclick="hideNavMenu()"></i>
+            </li>
+            <li class="menu-items">
+                <a href="/index.html" class="menu-links">
+                    Home
+                </a>
+            </li>
+            <li class="menu-items">
+                <a href="/aboutus.html" class="menu-links">
+                    About Us
+                </a>
+            </li>
+            <li class="menu-items">
+                <a href="/booking.html" class="menu-links">
+                    Book A Table
+                </a>
+            </li>
+            <li class="menu-items navmenu-active">
+                <a href="/contact.html" class="menu-links">
+                    Contact Us
+                </a>
+            </li>
+            <li class="menu-items">
+                <a href="/menu.html" class="menu-links">
+                    Menu
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="mainbody">
+        <h1>Contact US</h1>
+        <div class="intro-part">
+                <div class="csection" id="socials">
+                    <h3>Socials</h3>
+                    <ul class="contact-info">
+                        <li>Instagram: @hafiza <i class="fa-brands fa-instagram"></i></li>
+
+                        <li>X: @hafiza</li>
+                        <li>Facebook: @hafiza</li>
+                    </ul>
+                </div>
+                <div class="csection" id="call">
+                    <h3>Call Us!</h3>
+                    <p>828-345-4567</p>
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="csection" id="employ">
+                    <h3>Employment</h3>
+                    <p>We're looking for waiters and line chefs!</p>
+                </div>
+                <div class="csection" id="email">
+                    <h3>Email Us!</h3>
+                    <p>knowledge@hafiza.com</p>
+                </div>
+                <div class="csection" id="hours">
+                    <h3>Hours</h3>
+                    <ul class="contact-info">
+                        <li>Monday - Thursday: # am - # pm</li>
+                        <li>Friday, Saturday: # pm - # pm</li>
+                        <li>Sunday: # pm - # pm</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+</body>
+<script>
+    // function toggleNavMenu() {
+    //     const navMenu = document.getElementById("navMenu");
+    //     navMenu.style.display = "block";
+    // }
+
+    // function hideNavMenu() {
+    //     const navMenu = document.getElementById("navMenu");
+    //     navMenu.style.display = "none";
+    // }
+
+    function toggleNavMenu() {
+        document.getElementById('navMenu').classList.toggle('nav-is-active');
+    }
+
+    function hideNavMenu() {
+        document.getElementById('navMenu').classList.remove('nav-is-active');
+    }
+</script>
+</html>
