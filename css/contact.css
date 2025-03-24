@@ -34,6 +34,19 @@ div.intro-part {
     border-bottom: 2px #0095fd solid;
 }
 
+i.cont-sym {
+    color:#0095fd;
+    display: block;
+    padding: 0.5rem 0 0.25rem 0;
+    font-size: 1.25rem;
+}
+
+i.fa-brands {
+    display: inline-block;
+    padding: 0.1rem;
+    font-size: 1rem;
+}
+
 @media screen and (max-width: 1200px) and (min-width: 600px) {
     div.intro-part {
         display: grid;
