@@ -1,3 +1,7 @@
+*{
+    
+}
+
 .navbar nav{
    flex-direction: column;
    justify-content: end;
@@ -36,53 +40,160 @@
 #chefs{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:center;
+    gap: 40px;
+    margin-bottom: 5%;
 }
 
-/*-----Menu Styles-----*/
-#menuCategories{
-    text-align: center;
-    margin: 5%;
-   
+.carousel-caption{
+    position: static;
+    color: black;
+    margin: 0;
+    padding: 0;
 }
 
-#menuCategories button{
-    margin: 15px;
-
+#chefs div:hover{
+    box-shadow: 10px 10px #3A86FF;
+    
 }
 
-#menu-appetizers, #menu-entrees, #menu-desserts, #menu-drinks, #menu-specials{
-    display: flex;
-    justify-content: space-evenly;
-}
 
-.menu-item{
+
+/*-----Booking Styles-----*/
+#booking-elements{
     display: flex;
     flex-direction: row;
-    border-left: green;
-    justify-content: 1fr 2fr 1fr;
+    justify-content: space-evenly;
+    height: 100%;
+    margin-top: 5%;
 }
 
-.menu-hr{
-    border: none;
-    border-top: 5px dotted black;
-    width: 400px;
-}
-
-.price{
-    margin-left:15px;
-}
-
-h2{
+#booking-elements div{
+    width: 33.33%;
+    padding: 30px;
     text-align: center;
-    margin-bottom: 2%;
+    height: 70vh;
 }
 
-.vl{
-    border-left: 10px solid green;
-    height: 500px;
+#booking-elements h3{
+    margin-top: 5%;
+    padding: 10px;
+    margin-bottom: 5%;
+}
+
+#reservations{
+    background-color: #3A86FF;
+}
+#reservations h3{
+    /* background-color: #70b3e3; */
+    background-color: #F6E8C3;
+}
+
+#reservations p{
+    /* background-color: #70b3e3; */
+    color: white;
+}
+
+#reservations button:hover{
+    border-color: #F6E8C3;
+    border-width: 5px;
+}
+
+#reservations button:focus{
+    outline: none;
+}
+
+#events{
+    background-color: #F6E8C3;
+}
+
+#events h3{
+    background-color: #3A86FF;
+}
+
+#events button:hover{
+    border-color: #3A86FF;
+    border-width: 5px;
+}
+
+#events button:focus{
+    outline: none;
+}
+
+#catering{
+    background-color: #3A86FF;
+}
+#catering h3{
+    /* background-color: #70b3e3; */
+    background-color: #F6E8C3;
+}
+
+#catering p{
+    /* background-color: #70b3e3; */
+    color: white;
+}
+
+#catering button:hover{
+    border-color: #F6E8C3;
+    border-width: 5px;
+}
+
+#catering button:focus{
+    outline: none;
+}
+
+#booking-elements button{
+    background-color:#1E3A5F;
+    color: white;
+    margin-top: 5%;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup{
+    width: 800px;
+    background-color: #1E3A5F;
+    border-radius: 6px;
     position: absolute;
-    left: 50%;
-    margin-left: -3px;
     top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: white;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #F6E8C3;
+    color: #1E3A5F;
+    outline: none;
+    font-size:18px;
+    border-radius: 4px;
+    cursor: pointer;
 }
