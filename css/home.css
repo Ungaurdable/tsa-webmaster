@@ -51,7 +51,7 @@ a.button {
 
 .about-image {
     grid-area: img;
-    margin-left: 10%;
+    /* margin-left: 10%; */
 }
 
 .about-section {
@@ -62,10 +62,36 @@ a.button {
 
 @media screen and (max-width: 800px) and (min-width: 400px) {
     .dishimg {
-        height: 150px;
+        width: 50px;
+    }
+
+    .about-image {
+        grid-area: img;
+        /* margin-left: 10%; */
+        width: 20%;
     }
 }
 
 @media screen and (max-width: 400px) {
+    .dishimg {
+        width: 50px;
+    }
 
+    .about-image {
+        grid-area: img;
+        /* margin-left: 10%; */
+        width: 150px;
+    }
+
+    .special-dishes {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "dish"
+            "dish"
+            "dish";
+    }
+
+    .dish {
+        grid-area: dish;
+    }
 }
