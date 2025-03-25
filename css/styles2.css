@@ -9,10 +9,10 @@
 }
 
 h1 {
-    background-image:url('images/beachbg.jpg');
+    background-color:#fcf7d7;
+    border-bottom:#0095fd 4px solid;
     display: block;
     margin-top: 4.5rem;
-    border: 4px red solid;
     padding: 7.5rem 0;
     text-align: center;
     /* background-color:#fcf7d7; */
