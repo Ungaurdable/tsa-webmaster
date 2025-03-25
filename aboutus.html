@@ -16,68 +16,78 @@
 </head>
 
 <body>
-<header>
-  <nav>
-    <div class="logo">
-        <a href="index.html" class="logo-img-link">
-            <img class="logo-img" src="" alt="">
-        </a>
-        <a href="index.html" class="logo-name">Hafiza</a>
-    </div>
-    <ul class="nav-list">
-        <li class="nav-list-item  navbar-active">
-            <a href="index.html" class="nav-link">
+  <header>
+    <nav>
+        <div class="logo">
+            <a href="index.html" class="logo-img-link">
+                <img class="logo-img" src="images/hafiza.png" alt="">
+            </a>
+            <a href="index.html" class="logo-name">Hafiza</a>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-list-item  navbar-active">
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+            </li>
+            <li class="nav-list-item">
+                <a href="aboutus.html" class="nav-link">
+                    About Us
+                </a>
+            </li>
+            <li class="nav-list-item">
+                <a href="book.html" class="nav-link">
+                    Book A Table
+                </a>
+            </li>
+            <li class="nav-list-item">
+                <a href="contact.html" class="nav-link">
+                    Contact Us
+                </a>
+            </li>
+            <li class="nav-list-item">
+                <a href="menu.html" class="nav-link">
+                    Menu
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="hamburger" onclick="toggleNavMenu()">
+    <i class="fa-solid fa-bars"></i>
+</div>
+<div class="navmenu" id="navMenu">
+    <ul class="navmenu-list">
+        <li class="menu-items">
+            <p>Kavin Kumanan</p>
+            <i class="fa-solid fa-x" onclick="hideNavMenu()"></i>
+        </li>
+        <li class="menu-items navmenu-active">
+            <a href="/index.html" class="menu-links">
                 Home
             </a>
         </li>
-        <li class="nav-list-item">
-            <a href="aboutus.html" class="nav-link">
+        <li class="menu-items">
+            <a href="/aboutus.html" class="menu-links">
                 About Us
             </a>
         </li>
-        <li class="nav-list-item">
-            <a href="booking.html" class="nav-link">
+        <li class="menu-items">
+            <a href="/book.html" class="menu-links">
                 Book A Table
             </a>
         </li>
-        <li class="nav-list-item">
-            <a href="contact.html" class="nav-link">
+        <li class="menu-items">
+            <a href="/contact.html" class="menu-links">
                 Contact Us
             </a>
         </li>
+        <li class="menu-items">
+            <a href="/menu.html" class="menu-links">
+                Menu
+            </a>
+        </li>
     </ul>
-</nav>
-</header>
-<div class="hamburger" onclick="toggleNavMenu()">
-  <i class="fa-solid fa-bars"></i>
-</div>
-<div class="navmenu" id="navMenu">
-  <ul class="navmenu-list">
-      <li class="menu-items">
-          <p>Kavin Kumanan</p>
-          <i class="fa-solid fa-x" onclick="hideNavMenu()"></i>
-      </li>
-      <li class="menu-items navmenu-active">
-          <a href="/index.html" class="menu-links">
-              Home
-          </a>
-      </li>
-      <li class="menu-items">
-          <a href="/aboutus.html" class="menu-links">
-              About Us
-          </a>
-      </li>
-      <li class="menu-items">
-          <a href="/booking.html" class="menu-links">
-              Book A Table
-          </a>
-      </li>
-      <li class="menu-items">
-          <a href="/contact.html" class="menu-links">
-              Contact Us
-          </a>
-      </li>
-  </ul>
 </div>
 
       <h1 id="about-us-title">Our Story</h1>
@@ -145,7 +155,6 @@
         <br>
         <div id="chefs">
               <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5>Executive Chef</h5>
                   <h6>Keerthana Karthikeyan</h6>
@@ -155,7 +164,6 @@
               </div>
 
               <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5>Head Chef</h5>
                   <h6>Kavin Kumanan</h6>
@@ -163,20 +171,7 @@
                     content.</p>
                 </div>
               </div>
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                    content.</p>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                    content.</p>
-                </div>
-              </div>
+
         </div>
         
     </div>

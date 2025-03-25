@@ -51,7 +51,7 @@ a.button {
 
 .about-image {
     grid-area: img;
-    background-color:#0095fd;
+    margin-left: 10%;
 }
 
 .about-section {

@@ -22,97 +22,77 @@
 <body id="menu">
   <header>
     <nav>
-      <div class="logo">
-        <a href="index.html" class="logo-img-link">
-          <img class="logo-img" src="" alt="">
-        </a>
-        <a href="index.html" class="logo-name">Hafiza</a>
-      </div>
-      <ul class="nav-list">
-        <li class="nav-list-item  navbar-active">
-          <a href="index.html" class="nav-link">
-            Home
-          </a>
-        </li>
-        <li class="nav-list-item">
-          <a href="aboutus.html" class="nav-link">
-            About Us
-          </a>
-        </li>
-        <li class="nav-list-item">
-          <a href="booking.html" class="nav-link">
-            Book A Table
-          </a>
-        </li>
-        <li class="nav-list-item">
-          <a href="contact.html" class="nav-link">
-            Contact Us
-          </a>
-        </li>
-      </ul>
+        <div class="logo">
+            <a href="index.html" class="logo-img-link">
+                <img class="logo-img" src="images/hafiza.png" alt="">
+            </a>
+            <a href="index.html" class="logo-name">Hafiza</a>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-list-item  navbar-active">
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+            </li>
+            <li class="nav-list-item">
+                <a href="aboutus.html" class="nav-link">
+                    About Us
+                </a>
+            </li>
+            <li class="nav-list-item">
+                <a href="book.html" class="nav-link">
+                    Book A Table
+                </a>
+            </li>
+            <li class="nav-list-item">
+                <a href="contact.html" class="nav-link">
+                    Contact Us
+                </a>
+            </li>
+            <li class="nav-list-item">
+                <a href="menu.html" class="nav-link">
+                    Menu
+                </a>
+            </li>
+        </ul>
     </nav>
-
-    <div class="navmenu" id="navMenu">
-      <ul class="navmenu-list">
+</header>
+<div class="hamburger" onclick="toggleNavMenu()">
+    <i class="fa-solid fa-bars"></i>
+</div>
+<div class="navmenu" id="navMenu">
+    <ul class="navmenu-list">
         <li class="menu-items">
-          <p>Kavin Kumanan</p>
-          <i class="fa-solid fa-x" onclick="hideNavMenu()"></i>
+            <p>Kavin Kumanan</p>
+            <i class="fa-solid fa-x" onclick="hideNavMenu()"></i>
         </li>
         <li class="menu-items navmenu-active">
-          <a href="/index.html" class="menu-links">
-            Home
-          </a>
+            <a href="/index.html" class="menu-links">
+                Home
+            </a>
         </li>
         <li class="menu-items">
-          <a href="/aboutus.html" class="menu-links">
-            About Us
-          </a>
+            <a href="/aboutus.html" class="menu-links">
+                About Us
+            </a>
         </li>
         <li class="menu-items">
-          <a href="/booking.html" class="menu-links">
-            Book A Table
-          </a>
+            <a href="/book.html" class="menu-links">
+                Book A Table
+            </a>
         </li>
         <li class="menu-items">
-          <a href="/contact.html" class="menu-links">
-            Contact Us
-          </a>
+            <a href="/contact.html" class="menu-links">
+                Contact Us
+            </a>
         </li>
-      </ul>
-    </div>
-  </header>
-  <div class="hamburger" onclick="toggleNavMenu()">
-    <i class="fa-solid fa-bars"></i>
-  </div>
-  <div class="navmenu" id="navMenu">
-    <ul class="navmenu-list">
-      <li class="menu-items">
-        <p>Kavin Kumanan</p>
-        <i class="fa-solid fa-x" onclick="hideNavMenu()"></i>
-      </li>
-      <li class="menu-items navmenu-active">
-        <a href="/index.html" class="menu-links">
-          Home
-        </a>
-      </li>
-      <li class="menu-items">
-        <a href="/aboutus.html" class="menu-links">
-          About Us
-        </a>
-      </li>
-      <li class="menu-items">
-        <a href="/booking.html" class="menu-links">
-          Book A Table
-        </a>
-      </li>
-      <li class="menu-items">
-        <a href="/contact.html" class="menu-links">
-          Contact Us
-        </a>
-      </li>
+        <li class="menu-items">
+            <a href="/menu.html" class="menu-links">
+                Menu
+            </a>
+        </li>
     </ul>
-  </div>
-
+</div>
   <!--Buttons to different types-->
   <div id="menu-categories">
     <button><a href="#menu-appetizers">Appetizers</a></button>
