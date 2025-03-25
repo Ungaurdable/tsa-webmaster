@@ -58,7 +58,7 @@
     <div class="navmenu" id="navMenu">
         <ul class="navmenu-list">
             <li class="menu-items">
-                <p>Kavin Kumanan</p>
+                <p>Hafiza</p>
                 <i class="fa-solid fa-x" onclick="hideNavMenu()"></i>
             </li>
             <li class="menu-items navmenu-active">
@@ -113,7 +113,7 @@
                 <div class="csection" id="employ">
                     <h3>Employment</h3>
                     <i class="fa-solid fa-user cont-sym"></i>
-                    <p>We're looking for waiters and line chefs!</p>
+                    <p>If you're in need of a job, we got you! At the moment, we're on the lookout for waiters and line chefs, but people with other skillsets are also welcome.</p>
                 </div>
                 <div class="csection" id="email">
                     <h3>Email Us!</h3>
@@ -129,6 +129,17 @@
                         <li>Sunday: # pm - # pm</li>
                     </ul>
                 </div>
+        </div>
+        <div class="contact-form">
+            <form action="/submit.txt">
+                <div class="formpart">
+                    <!-- <label for="name">Name:</label> -->
+                    <input type="text" id="name" name="full-name" placeholder="Name" class="contact-input" required>
+                    <input type="email" id="email" name="email" placeholder="Email" class="contact-input" required>
+                    <textarea type="text" placeholder="Message" class="contact-input" required></textarea>
+                    <button type="submit" id="submit">Submit <i class="fa-solid fa-share"></i></button>
+                </div>
+            </form>
         </div>
     </div>
 </body>

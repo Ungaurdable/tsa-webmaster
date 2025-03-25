@@ -159,7 +159,7 @@ ul.navmenu-list {
 
 .navmenu {
     position: fixed;
-    z-index: 10000;
+    z-index: 1000;
     background-color: rgba(0, 149, 253, 0.9);
     backdrop-filter: blur(0.1rem);
     height: 100%;
@@ -276,6 +276,8 @@ li.navmenu-active a i.for-navmenu {
         display: flex;
         /* backdrop-filter: blur(0); */
         border-bottom: 4px #0095fd solid;
+        gap: 10px;
+        justify-content: space-between;
     }
 
     .hamburger {
