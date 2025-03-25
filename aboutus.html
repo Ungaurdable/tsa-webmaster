@@ -10,35 +10,76 @@
     <html lang="en">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/aboutus.css">
+    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link active btn btn-danger" aria-current="page" href="menu.html">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-danger" href="book.html">Booking</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-danger" href="contact.html"> Contact Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn btn-danger" href="aboutus.html"> About Us</a>
-          </li>
-        </ul>
-      </div>
+<header>
+  <nav>
+    <div class="logo">
+        <a href="index.html" class="logo-img-link">
+            <img class="logo-img" src="" alt="">
+        </a>
+        <a href="index.html" class="logo-name">Hafiza</a>
     </div>
-  </nav>
-    
+    <ul class="nav-list">
+        <li class="nav-list-item  navbar-active">
+            <a href="index.html" class="nav-link">
+                Home
+            </a>
+        </li>
+        <li class="nav-list-item">
+            <a href="aboutus.html" class="nav-link">
+                About Us
+            </a>
+        </li>
+        <li class="nav-list-item">
+            <a href="booking.html" class="nav-link">
+                Book A Table
+            </a>
+        </li>
+        <li class="nav-list-item">
+            <a href="contact.html" class="nav-link">
+                Contact Us
+            </a>
+        </li>
+    </ul>
+</nav>
+</header>
+<div class="hamburger" onclick="toggleNavMenu()">
+  <i class="fa-solid fa-bars"></i>
+</div>
+<div class="navmenu" id="navMenu">
+  <ul class="navmenu-list">
+      <li class="menu-items">
+          <p>Kavin Kumanan</p>
+          <i class="fa-solid fa-x" onclick="hideNavMenu()"></i>
+      </li>
+      <li class="menu-items navmenu-active">
+          <a href="/index.html" class="menu-links">
+              Home
+          </a>
+      </li>
+      <li class="menu-items">
+          <a href="/aboutus.html" class="menu-links">
+              About Us
+          </a>
+      </li>
+      <li class="menu-items">
+          <a href="/booking.html" class="menu-links">
+              Book A Table
+          </a>
+      </li>
+      <li class="menu-items">
+          <a href="/contact.html" class="menu-links">
+              Contact Us
+          </a>
+      </li>
+  </ul>
+</div>
+
       <h1 id="about-us-title">Our Story</h1>
     <!-- main content-->
     <div id="aboutUs">
@@ -150,7 +191,16 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+      
+      function toggleNavMenu() {
+        document.getElementById('navMenu').classList.toggle('nav-is-active');
+    }
+
+    function hideNavMenu() {
+        document.getElementById('navMenu').classList.remove('nav-is-active');
+    }
+      </script>
 </body>
 
 </html>
