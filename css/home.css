@@ -61,10 +61,6 @@ a.button {
 }
 
 @media screen and (max-width: 800px) and (min-width: 400px) {
-    .dishimg {
-        width: 50px;
-    }
-
     .about-image {
         grid-area: img;
         /* margin-left: 10%; */
@@ -73,9 +69,6 @@ a.button {
 }
 
 @media screen and (max-width: 400px) {
-    .dishimg {
-        width: 50px;
-    }
 
     .about-image {
         grid-area: img;
